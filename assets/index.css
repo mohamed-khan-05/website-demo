@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-heading > {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-text-regular {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --blue: #0041c7;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.navright ul li {
+  display: inline;
+}
+.navright ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "DM Serif Text", serif;
+  padding-top: 10rem;
+}
+.indeximg {
+  width: 100vw;
+  height: 55vh;
+  background-image: url(../images/home-man.jpg);
+  background-size: cover;
+}
+
+.content button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.line {
+  margin: 0.5rem;
+}
+
+.about {
+  background-color: #fff;
+  width: 100vw;
+  height: 55vh;
+}
+
+.abouttext p {
+  margin-top: 1rem;
+}
+
+.details {
+  display: flex;
+}
+
+.questions {
+  font-weight: bold;
+}
+.questions p {
+  margin-bottom: 1rem;
+}
+.answers {
+  margin-left: 2rem;
+}
+
+.answers p {
+  margin-bottom: 1rem;
+}
+
+.answers p::before {
+  content: ": ";
+}
+
+.navright ul li a:hover {
+  background-color: #fff;
+  color: var(--blue);
+}
+
+/* Large screens --------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1201px) {
+  body {
+    background-color: black;
+  }
+
+  .navbar {
+    margin: 0 10rem 0 3rem;
+  }
+
+  .navright {
+    margin-right: 16rem;
+  }
+
+  .navright ul li a {
+    padding: 10rem 1.5rem 0.2rem 1.5rem;
+  }
+
+  .heading {
+    font-size: 5rem;
+    color: aqua;
+    font-family: "Tangerine", cursive;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+  }
+
+  .indeximg {
+    width: 100vw;
+    height: 55vh;
+    background-image: url(../images/home-man.jpg);
+    background-size: cover;
+  }
+
+  .content {
+    margin-left: 8rem;
+  }
+
+  .one {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .two {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .three {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .content button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--blue);
+    color: white;
+    margin-top: 1rem;
+    border: none;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52vh;
+  }
+  .aboutimg {
+    background-image: url(../images/about-man.jpg);
+    background-size: cover;
+    width: 20rem;
+    height: 85%;
+    box-sizing: border-box;
+    border: rgb(209, 209, 209) 0.5rem outset;
+  }
+
+  .abouttext {
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+    width: 40rem;
+    height: 82%;
+    margin-left: 4rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+/* desktop ---------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    background-color: black;
+  }
+
+  .navbar {
+    margin: 0 10rem 0 3rem;
+  }
+
+  .navright {
+    margin-right: 16rem;
+  }
+
+  .navright ul li a {
+    padding: 10rem 1.5rem 0.2rem 1.5rem;
+  }
+
+  .heading {
+    font-size: 5rem;
+    color: red;
+    font-family: "Tangerine", cursive;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+  }
+
+  .indeximg {
+    width: 100vw;
+    height: 55vh;
+    background-image: url(../images/home-man.jpg);
+    background-size: cover;
+  }
+
+  .content {
+    margin-left: 8rem;
+  }
+
+  .one {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .two {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .three {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .content button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    background-color: var(--blue);
+    color: white;
+    margin-top: 1rem;
+    border: none;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52vh;
+  }
+  .aboutimg {
+    background-image: url(../images/about-man.jpg);
+    background-size: cover;
+    width: 20rem;
+    height: 85%;
+    box-sizing: border-box;
+    border: rgb(209, 209, 209) 0.5rem outset;
+  }
+
+  .abouttext {
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+    width: 40rem;
+    height: 82%;
+    margin-left: 4rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+/* Phone ----------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: black;
+    font-size: 8px;
+  }
+
+  .navright ul li a {
+    font-size: 0.9rem;
+    padding: 10rem 2px 0.2rem 2px;
+    margin: 0 5px 0 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+    color: yellow;
+    font-family: "Tangerine", cursive;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  .indeximg {
+    background-position: right;
+  }
+
+  .content {
+    margin-left: 0.5rem;
+  }
+
+  .one {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .two {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .three {
+    color: white;
+    font-size: 0.4rem;
+  }
+
+  .content button {
+    width: 5rem;
+    height: 1.4rem;
+    border-radius: 1.5rem;
+    background-color: var(--blue);
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    font-size: 0.6rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200%;
+    width: 100vw;
+  }
+  .aboutimg {
+    background-image: url(../images/about-man.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    box-sizing: border-box;
+    border: rgb(209, 209, 209) 0.5rem outset;
+    margin-top: 1rem;
+  }
+
+  .abouttext {
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+    width: 90%;
+    height: 50%;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .answers {
+    margin-left: 0.7rem;
+  }
+}
+/* 481px — 768px: iPads, Tablets ---------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: black;
+    font-size: 16px;
+  }
+
+  .navright ul li a {
+    font-size: 1.5rem;
+    margin: 0 10px 0 0;
+    padding: 10rem 0 0.2rem 0;
+  }
+
+  .heading {
+    font-size: 4rem;
+    color: green;
+    font-family: "Tangerine", cursive;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  .indeximg {
+    background-position: -107rem;
+  }
+
+  .content {
+    margin-left: 0.5rem;
+  }
+
+  .one {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .two {
+    color: white;
+    font-size: 3rem;
+  }
+
+  .three {
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+  }
+
+  .content button {
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--blue);
+    color: white;
+    margin-top: 1rem;
+    border: none;
+    font-size: 1rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200%;
+    width: 100vw;
+    font-size: 1.7rem;
+  }
+  .aboutimg {
+    background-image: url(../images/about-man.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    box-sizing: border-box;
+    border: rgb(209, 209, 209) 0.5rem outset;
+    margin-top: 1rem;
+  }
+
+  .abouttext {
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+    width: 90%;
+    height: 50%;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+/* 320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
